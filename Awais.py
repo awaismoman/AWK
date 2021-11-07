@@ -103,7 +103,7 @@ idh = []
 
 def tool_login():
     os.system("clear")
-    print banner
+    print 
     print 
     username = raw_input("[+] Username : ")
     if username =="AWAIS":
