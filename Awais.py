@@ -108,13 +108,13 @@ def tool_login():
     username = raw_input("[+] Username : ")
     if username =="AWAIS":
         os.system("clear")
-        print banner
+        print 
         print
         print ("[✓] Username : AWAIS (Correct)")
         passwordss = raw_input("[+] Password : ")
         if passwordss =="PAHTON":
             os.system("clear")
-            print banner
+            print 
             print 
             logging()
             os.system("clear")
@@ -141,7 +141,7 @@ def tool_login():
         tool_login()
 def login_choice():
     os.system("clear")
-    print banner
+    print 
     print
     print ("[1] Login With Token(Safe Method)")
     print ("[2] Login With ID/Password(May Have Checkpoint)")
@@ -181,7 +181,7 @@ def login_select():
         login.select()
 def loginfb():
     os.system("clear")
-    print bannner
+    print 
     print
     print("Login With Facebook Account").center(50)
     print
