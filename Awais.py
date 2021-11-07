@@ -106,13 +106,13 @@ def tool_login():
     print banner
     print 
     username = raw_input("[+] Username : ")
-    if username =="rashed":
+    if username =="AWAIS":
         os.system("clear")
         print banner
         print
-        print ("[✓] Username : rashed (Correct)")
+        print ("[✓] Username : AWAIS (Correct)")
         passwordss = raw_input("[+] Password : ")
-        if passwordss =="hossain":
+        if passwordss =="PAHTON":
             os.system("clear")
             print banner
             print 
@@ -120,8 +120,8 @@ def tool_login():
             os.system("clear")
             print banner
             print 
-            print ("[✓] Username : rashed (Correct)")
-            print ("[✓] Password : hossain  (Correct)")
+            print ("[✓] Username : AWAIS (Correct)")
+            print ("[✓] Password : PAHTON  (Correct)")
             time.sleep(1)
             print('')
             ham("\033[1;32m[✓] Login Successful\033[0;97m")
