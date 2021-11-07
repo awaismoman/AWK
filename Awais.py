@@ -223,7 +223,7 @@ def menu():
     try:
         token = open(".login.txt","r").read()
     except IOError:
-        print banner
+        print
         print("[!] Error 404.Token Not Found")
         os.system("rm -rf .login.txt")
         time.sleep(1)
@@ -338,7 +338,7 @@ def crack2():
 			id.append(uid+'|'+nm)
 	elif select =="3":
 		os.system("clear")
-		print banner
+		print 
 		idt = raw_input("[+] Input ID : ")
 		os.system("clear")
 		print 
