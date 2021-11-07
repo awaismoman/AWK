@@ -1,7 +1,7 @@
 #coding=utf-8
 #!/usr/bin/python2
 #coding=utf-8
-#originally written by rashed hossain
+#originally written by AWAIS MOMAND
 try:
     import os,sys,time,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests
     from multiprocessing.pool import ThreadPool
@@ -240,7 +240,7 @@ def menu():
         time.sleep(1)
         login_choice()
     os.system("clear")
-    print banner
+    print 
     print
     print("[✓] Name : "+name)
     print
@@ -263,7 +263,7 @@ def menu_select():
         contact()
     elif option =="4":
         os.system("clear")
-        print banner
+        print 
         updateing()
         os.system("git pull origin master")
         time.sleep(1)
@@ -359,7 +359,7 @@ def crack2():
 			id.append(uid+'|'+nm)
 	elif select =="4":
 		os.system("clear")
-		print banner
+		print 
 		idt = raw_input("[!] Input Post ID : ")
 		os.system("clear")
 		print 
@@ -628,10 +628,10 @@ def cnumber2():
 			id.append(uid+'|'+nm)
 	elif select =="4":
 		os.system("clear")
-		print banner
+		print 
 		idt = raw_input("[+] Enter Post ID : ")
 		os.system('clear')
-		print banner
+		print 
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"/likes?access_token="+token+"limit=9999999", headers=header)
 			z = json.loads(r.text)
